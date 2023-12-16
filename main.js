@@ -52,3 +52,14 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader);
 
+/* === Show Scroll Top ===  */
+function scrollTop(){
+    const scrollTop = doocument.getElementById('scroll-top');
+    if(this.scrollY >= 560){
+        scrollTop.classList.add('show-scroll');
+    }else {
+        scrollTop.classList.remove('show-scroll');
+    }
+}
+window.addEventListener('scroll', scrollHeader);
+
