@@ -354,7 +354,8 @@ img{
 }
 
 .about__img{
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     width: 220px;
     border-radius: .5rem;
 }
