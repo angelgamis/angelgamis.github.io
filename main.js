@@ -24,7 +24,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 /* === Scroll Sections Active Link ===  */
 const sections = document.querySelectorAll('section[id]');
 
-function scrollActive(){
+/*function scrollActive(){
     const scrollY = window.pageYOffset;
 
     sections.forEach(current =>{
@@ -39,7 +39,7 @@ function scrollActive(){
         }
     })
 }
-window.addEventListener('scroll', scrollActive);
+window.addEventListener('scroll', scrollActive);*/
 
 /* === Change Background Header ===  */
 function scrollHeader(){
