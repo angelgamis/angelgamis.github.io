@@ -22,10 +22,10 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /* === Scroll Sections Active Link ===  */
-const sections = document.querySelectorAll('section[id')
+const sections = document.querySelectorAll('section[id]');
 
 function scrollActive(){
-    const scrollY = widow.pageYOffset;
+    const scrollY = window.pageYOffset;
 
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight;
@@ -43,7 +43,7 @@ window.addEventListener('scroll', scrollActive);
 
 /* === Change Background Header ===  */
 function scrollHeader(){
-    const header = doocument.getElementById('header');
+    const header = document.getElementById('header');
     if(this.scrollY >= 200){
         header.classList.add('scroll-header');
     }else {
@@ -54,12 +54,16 @@ window.addEventListener('scroll', scrollHeader);
 
 /* === Show Scroll Top ===  */
 function scrollTop(){
-    const scrollTop = doocument.getElementById('scroll-top');
+    const scrollTop = document.getElementById('scroll-top');
+    console.log(this.scrollY);
     if(this.scrollY >= 560){
         scrollTop.classList.add('show-scroll');
     }else {
         scrollTop.classList.remove('show-scroll');
     }
 }
-window.addEventListener('scroll', scrollHeader);
+window.addEventListener('scroll', scrollTop);
 
+function openExperience(){
+    location.href = experience.html;
+}

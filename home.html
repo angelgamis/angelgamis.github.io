@@ -31,10 +31,10 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link" onclick="openExperience()">Experience</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contactme</a></li>
-                    <li class="nav__item"><a href="#extra" class="nav__link">Extra</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                 </ul>
             </div> 
 
@@ -57,23 +57,55 @@
 
                 <div class="home__social">
                     <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin-square' ></i></a>
+                    <a href="" class="home__social-icon"><img src="assets/itchio-textless-white.png" class="itch__social-icon"></a>
                     <a href="" class="home__social-icon"><i class='bx bxs-envelope' ></i></a>
                 </div>
 
                 <div class="home__img">
-                    <img src="assets/websiteBackground.png" alt="Blurry programming screen image">
+                    <img src="assets/topSelfPortrait.jpeg" alt="Image of Angel Gamis">
                 </div>
             </div>
         </section>
 
         <!-- === About === -->
+        <section class="about section bd-container" id="about">
+            <span class="section-subtitle">My history</span>
+            <h2 class="section-title">About me</h2>
 
+            <div class="about__container bd-grid">
+                <div class="about__data bd-grid">
+                    <p><span class="about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ratione amet placeat ad veritatis quae maiores quasi, officia saepe voluptatum voluptatem vitae neque incidunt debitis soluta quod!</span></p>
+
+                    <div>
+                        <span class="about__number">2</span>
+                        <span class="about__achievement">Years Of Experience</span>
+                    </div>
+                    
+                    <div>
+                        <span class="about__number">1</span>
+                        <span class="about__achievement">Projects Complete</span>
+                    </div>
+                </div>
+
+                <img src="assets/fullBodySelfPortrait.jpeg" alt="Portrait photo of Angel Gamis" class="about__img">
+            </div>
+        </section>
 
     </main>
 
     <!-- === Footer === -->
+    <footer class="footer">
+        <div class="footer__container bd-container">
+            <h1 class="footer__title">Angel Gamis</h1>
+            <p class="footer__description">I am Angel Gamis, this is my portfolio, feel free to take a look around!</p>
 
+            <div class="footer__social">
+                <a href="#" class="footer__link"><i class='bx bxl-github' ></i></a>
+                <a href="#" class="footer__link"><i class='bx bxs-envelope' ></i></a>
+            </div>
+            <p class="footer__copy">2023 Angel Gamis. Made with template by Bedimcode</p>
+        </div>
+    </footer>
 
     <!-- === Swiper JS === -->
 
