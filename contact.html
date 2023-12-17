@@ -45,8 +45,45 @@
 
     <main class="l-main">
         <!-- === Contact === -->
-        <h1>Contactme</h1>
+        <section class="contact section bd-container">
+            <span class="section-subtitle">To get in touch</span>
+            <h2 class="section-title">Contact Me</h2>
 
+            <div class="contact__container bd-gid">
+                <div class="contact__content bd-grid">
+                    <div class="contact__box">
+                        <i class="bx bx-envelope"></i>
+                        <h3 class="contact__title">Email</h3>
+                        <span class="contact__description">angel28gamis@hotmail.com</span>
+                    </div>
+
+                    <div class="contact__box">
+                        <i class="bx bx-chat contact__icon"></i>
+                        <h3 class="contact__title">Chat</h3>
+                        <div>
+                            <a href="#" class="contact__social"><i class="bx bxl-telegram"></i></a>
+                            <a href="#" class="contact__social"><i class="bx bxl-messenger"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Name" class="contact__input" required>
+                        <input type="email" placeholder="Email" class="contact__input" required>
+                    </div>
+
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Project" class="contact__input">
+                        <input type="tel" placeholder="Phone Number" pattern="[0-9]{9}" class="contact__input" required>
+                    </div>
+
+                    <textarea name="" id="" cols="0" rows="7" placeholder="Message" class="contact__input" required></textarea>
+
+                    <input type="submit" value="Send Message" class="button contact__button">
+                </form>
+            </div>
+        </section>
     </main>
 
     <!-- === Footer === -->
