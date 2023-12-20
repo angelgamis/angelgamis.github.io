@@ -748,6 +748,11 @@ img{
         margin-right: var(--mb-4);
         margin-bottom: 0;
     }
+
+    .itch__social-icon{
+        margin-bottom: .3rem;
+    }
+
     .home__img img{
         width: 300px;
     }
