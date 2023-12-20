@@ -55,7 +55,6 @@ window.addEventListener('scroll', scrollHeader);
 /* === Show Scroll Top ===  */
 function scrollTop(){
     const scrollTop = document.getElementById('scroll-top');
-    console.log(this.scrollY);
     if(this.scrollY >= 560){
         scrollTop.classList.add('show-scroll');
     }else {
@@ -67,3 +66,31 @@ window.addEventListener('scroll', scrollTop);
 function openExperience(){
     location.href = experience.html;
 }
+
+/* === Contact Page Email ===  */
+
+var emailButton = document.getElementById('emailSubmit');
+emailButton.addEventListener('click', (e)=>{
+    e.preventDefault();
+
+    var name = document.getElementById('emailName').value;
+    var email = document.getElementById('emailEmail').value;
+    var subject = document.getElementById('emailSubject').value;
+    var number = document.getElementById('emailNumber').value;
+    var message = document.getElementById('emailMessage').value;
+
+    var body = "Name: " + name + "<br/> Email: " + email + "<br/>Number: "  + number + "<br/><br/>" + message;
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "angel28gamis@hotmail.com",
+        Password : "0C45F9E2FD8726B258DBFE72EB2A34994613",
+        To : 'angel28gamis@hotmail.com',
+        From : email,
+        Subject : "From Portfolio Contact: " + subject,
+        Body : body
+    }).then(
+      message => alert('Sent your message!')
+    );
+});
+

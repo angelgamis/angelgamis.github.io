@@ -69,18 +69,18 @@
 
                 <form action="" class="contact__form">
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Name" class="contact__input" required>
-                        <input type="email" placeholder="Email" class="contact__input" required>
+                        <input type="text" placeholder="Name" class="contact__input" id="emailName" required>
+                        <input type="email" placeholder="Email" class="contact__input" id="emailEmail" required>
                     </div>
 
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Project" class="contact__input">
-                        <input type="tel" placeholder="Phone Number" pattern="[0-9]{9}" class="contact__input" required>
+                        <input type="text" placeholder="Subject" class="contact__input" id="emailSubject" required>
+                        <input type="tel" placeholder="Phone Number" pattern="[0-9]{10}" class="contact__input" id="emailNumber" required>
                     </div>
 
-                    <textarea name="" id="" cols="0" rows="7" placeholder="Message" class="contact__input" required></textarea>
+                    <textarea name="" cols="0" rows="7" placeholder="Message" class="contact__input" id="emailMessage" required></textarea>
 
-                    <input type="submit" value="Send Message" class="button contact__button">
+                    <input type="submit" value="Send Message" class="button contact__button" id="emailSubmit">
                 </form>
             </div>
         </section>
@@ -104,5 +104,6 @@
 
     <!-- === Main JS === -->
     <script src="main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
