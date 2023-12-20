@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- === Swiper CSS === -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
 
     <!-- === Box Icons === -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -49,22 +49,107 @@
             <span class="section-subtitle">Work</span>
             <h2 class="section-title">Portfolio:  Games & Projects</h2>
 
-            <div class="work__nav">
-                <span class="work__item">All</span>
-                <span class="work__item">Unity</span>
-                <span class="work__item">Javascript</span>
-                <span class="work__item">Unreal</span>
-                <span class="work__item">Projects</span>
-            </div>
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <div class="swiper-wrapper">
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/Games/compass.jpg" alt="Compass Game Logo" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Compass</h3>
+                                <p class="card__description">
+                                    A Unity dungeon crawler
+                                </p>
 
-            <div class="work__container bd-grid">
-                <div class="work__content">
-                    <a href="#"><img src="assets/unityEngineLogo.png" alt="The Wall Between Us Game Art" class="work__img"></a>
-                    <div class="work__data">
-                        <span class="portfolio__subtitle">Unity</span>
-                        <a href="#"></a>
+                                <a href="#" class="card__button">View</a>
+                                <a href="#" class="card__credits"><img src="assets/group.png" alt="" class="card__imgInfo"></a>
+                                <a href="https://unity.com/" class="card__devTool"><img src="assets/unityEngineLogo.png" alt="Unity Engine Logo" class="card__imgInfo"></a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/Games/flappyDuck.jpg" alt="Compass Game Logo" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Flappy Duck</h3>
+                                <p class="card__description">
+                                    This is a javascript Flappy Bird recreation
+                                </p>
+
+                                <a href="#" class="card__button">View</a>
+                                <a href="#" class="card__credits"><img src="assets/individual.png" alt="" class="card__imgInfo"></a>
+                                <a href="#" class="card__devTool"><img src="assets/javascriptLogo.png" alt="Javascript Logo" class="card__imgInfo"></a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/Games/gravitationalAttractionArt.png" alt="Compass Game Logo" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Gravitational Attraction Art</h3>
+                                <p class="card__description">
+                                    A P5.js art creation project
+                                </p>
+
+                                <a href="#" class="card__button">View</a>
+                                <a href="#" class="card__credits"><img src="assets/individual.png" alt="" class="card__imgInfo"></a>
+                                <a href="#" class="card__devTool"><img src="assets/javascriptLogo.png" alt="Javascript Logo" class="card__imgInfo"></a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/Games/tankTrouble.jpg" alt="Compass Game Logo" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Tank Trouble</h3>
+                                <p class="card__description">
+                                    This is a recreation of a tank trouble game using javascript
+                                </p>
+
+                                <a href="#" class="card__button">View</a>
+                                <a href="#" class="card__credits"><img src="assets/individual.png" alt="" class="card__imgInfo"></a>
+                                <a href="#" class="card__devTool"><img src="assets/javascriptLogo.png" alt="Javascript Logo" class="card__imgInfo"></a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/Games/theWallBetweenUs.jpg" alt="Compass Game Logo" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">The Wall Between Us</h3>
+                                <p class="card__description">
+                                    A Unity platformer game
+                                </p>
+
+                                <a href="#" class="card__button">View</a>
+                                <a href="#" class="card__credits"><img src="assets/individual.png" alt="" class="card__imgInfo"></a>
+                                <a href="https://unity.com/" class="card__devTool"><img src="assets/unityEngineLogo.png" alt="Unity Engine Logo" class="card__imgInfo"></a>
+                            </div>
+                        </article>
                     </div>
                 </div>
+
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-prev">
+                    <i class='bx bx-chevron-left' ></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+
             </div>
         </section>
     </main>
@@ -84,6 +169,7 @@
     </footer>
 
     <!-- === Swiper JS === -->
+    <script src="swiper-bundle.min.js"></script>
 
     <!-- === Main JS === -->
     <script src="main.js"></script>

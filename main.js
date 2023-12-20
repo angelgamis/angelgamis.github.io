@@ -12,7 +12,7 @@ const showMenu = (toggleId,navId) =>{
 
 showMenu('nav-toggle','nav-menu');
 
-/* === Remove Meny Mobile ===  */
+/* === Remove Menu Mobile ===  */
 const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction(){
@@ -67,8 +67,34 @@ function openExperience(){
     location.href = experience.html;
 }
 
-/* === Contact Page Email ===  */
+/* === Swiper CSS */
+let swiperCards = new Swiper('.card__content', {
+    loop: true,
+    spaceBetween: 32,
+    grabCursor: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 
+    breakpoints: {
+        600:{
+            slidesPerView: 2,
+        },
+        968:{
+            slidesPerView: 3,
+        },
+    }
+});
+
+/* === Contact Page Email ===  */
 var emailButton = document.getElementById('emailSubmit');
 emailButton.addEventListener('click', (e)=>{
     e.preventDefault();
