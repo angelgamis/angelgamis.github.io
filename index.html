@@ -1,114 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- === Swiper CSS === -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="" />
 
     <!-- === Box Icons === -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- === CSS === -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- === Title === -->
     <title>Angel Gamis</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- === Scroll Top === -->
     <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bx-chevron-up scrolltop__icon'></i>
+      <i class="bx bx-chevron-up scrolltop__icon"></i>
     </a>
-    
+
     <!-- === Header === -->
     <header class="l-header" id="header">
-        <nav class="nav bd-container">
-            <a href="#" class="nav__logo">Angel Gamis</a>
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Angel Gamis</a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="/experience" class="nav__link">Experience</a></li>
-                    <li class="nav__item"><a href="/work" class="nav__link">Work</a></li>
-                    <li class="nav__item"><a href="/contact" class="nav__link">Contactme</a></li>
-                </ul>
-            </div> 
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="/experience" class="nav__link">Experience</a>
+            </li>
+            <li class="nav__item">
+              <a href="/work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="/contact" class="nav__link">Contactme</a>
+            </li>
+          </ul>
+        </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
     </header>
 
     <main class="l-main">
-        <!-- === Home === -->
-        <section class="home" id="home">
-            <div class="home__container bd-container bd-grid">
-                <div class="home__data">
-                    <span class="home__greeting">Hello, My name is</span>
-                    <h1 class="home__name">Angel Gamis</h1>
-                    <span class="home__profession">Game Developer</span><br><br> 
-                    <a download="" href="#" class="button button-light">Learn More</a>
-                </div>
+      <!-- === Home === -->
+      <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+          <div class="home__data">
+            <span class="home__greeting">Hello, My name is</span>
+            <h1 class="home__name">Angel Gamis</h1>
+            <span class="home__profession">Game Developer</span><br /><br />
+            <a download="" href="#" class="button button-light">Learn More</a>
+          </div>
 
-                <div class="home__social">
-                    <a href="https://github.com/angelgamis" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a href="https://angel-gamis.itch.io/" target="_blank" class="home__social-icon"><img src="assets/itchio-textless-white.png" class="itch__social-icon"></a>
-                    <a href="/contact" class="home__social-icon" ><i class='bx bxs-envelope' ></i></a>
-                </div>
+          <div class="home__social">
+            <a
+              href="https://github.com/angelgamis"
+              target="_blank"
+              class="home__social-icon"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://angel-gamis.itch.io/"
+              target="_blank"
+              class="home__social-icon"
+              ><img
+                src="assets/itchio-textless-white.png"
+                class="itch__social-icon"
+            /></a>
+            <a href="/contact" class="home__social-icon"
+              ><i class="bx bxs-envelope"></i
+            ></a>
+          </div>
 
-                <div class="home__img">
-                    <img src="assets/topSelfPortrait.jpeg" alt="Image of Angel Gamis">
-                </div>
+          <div class="home__img">
+            <img src="assets/topSelfPortrait.jpeg" alt="Image of Angel Gamis" />
+          </div>
+        </div>
+      </section>
+
+      <!-- === About === -->
+      <section class="about section bd-container" id="about">
+        <span class="section-subtitle">My history</span>
+        <h2 class="section-title">About me</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__data bd-grid">
+            <p>
+              <span class="about__description"
+                >Hi, my name is Angel Gamis. I am 18 years old and passionate
+                about programming in C# and JavaScript. I am interested in
+                software development/game development. I am partly self taught
+                but also took computer science in grade 12, and TechHub Exhange
+                Game Development for 2 years. I am a intermediate level
+                programmer and would love to progress my learning. I am
+                currently in my first year of Game Development - Programming at
+                Red River College Polytech</span
+              >
+            </p>
+
+            <div>
+              <span class="about__number">2</span>
+              <span class="about__achievement">Years Of Experience</span>
             </div>
-        </section>
 
-        <!-- === About === -->
-        <section class="about section bd-container" id="about">
-            <span class="section-subtitle">My history</span>
-            <h2 class="section-title">About me</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__data bd-grid">
-                    <p><span class="about__description">Hi, my name is Angel Gamis. I am 18 years old and passionate about programming in C# and JavaScript. I am interested in software development/game development. I am partly self taught but also took computer science in grade 12, and TechHub Exhange Game Development for 2 years. I am a intermediate level programmer and would love to progress my learning. I am currently in my first year of Game Development - Programming at Red River College Polytech</span></p>
-
-                    <div>
-                        <span class="about__number">2</span>
-                        <span class="about__achievement">Years Of Experience</span>
-                    </div>
-                    
-                    <div>
-                        <span class="about__number">1</span>
-                        <span class="about__achievement">Projects Complete</span>
-                    </div>
-                </div>
-
-                <img class="about__img" src="assets/fullBodySelfPortrait.jpeg" alt="Portrait photo of Angel Gamis">
+            <div>
+              <span class="about__number">1</span>
+              <span class="about__achievement">Projects Complete</span>
             </div>
-        </section>
+          </div>
 
+          <img
+            class="about__img"
+            src="assets/fullBodySelfPortrait.jpeg"
+            alt="Portrait photo of Angel Gamis"
+          />
+        </div>
+      </section>
     </main>
 
     <!-- === Footer === -->
     <footer class="footer">
-        <div class="footer__container bd-container">
-            <h1 class="footer__title">Angel Gamis</h1>
-            <p class="footer__description">This is my portfolio, feel free to take a look around!</p>
+      <div class="footer__container bd-container">
+        <h1 class="footer__title">Angel Gamis</h1>
+        <p class="footer__description">
+          This is my portfolio, feel free to take a look around!
+        </p>
 
-            <div class="footer__social">
-                <a href="#" class="footer__link"><i class='bx bxl-github' ></i></a>
-                <a href="#" class="footer__link"><i class='bx bxs-envelope' ></i></a>
-            </div>
-            <p class="footer__copy">2023 Angel Gamis. Made with template by Bedimcode</p>
+        <div class="footer__social">
+          <a href="#" class="footer__link"><i class="bx bxl-github"></i></a>
+          <a href="#" class="footer__link"><i class="bx bxs-envelope"></i></a>
         </div>
+        <p class="footer__copy">
+          2023 Angel Gamis. Made with template by Bedimcode
+        </p>
+      </div>
     </footer>
 
     <!-- === Swiper JS === -->
 
     <!-- === Main JS === -->
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
