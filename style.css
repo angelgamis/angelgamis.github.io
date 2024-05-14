@@ -605,7 +605,7 @@ img {
 .work__social {
   margin: auto;
   width: 50%;
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
 }
@@ -620,8 +620,10 @@ img {
 .work__itch__social-icon {
   width: 2.5rem;
   margin: var(--mb-2);
+  margin-top: 0.5rem;
   background-color: none;
-  color: var(--first-color);
+  filter: invert(8%) sepia(54%) saturate(1702%) hue-rotate(323deg)
+    brightness(105%) contrast(103%);
 }
 
 .home__social-icon:hover {
