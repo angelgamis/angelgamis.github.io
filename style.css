@@ -116,7 +116,7 @@ img {
 
 .section-subtitle {
   display: block;
-  font-size: var(--smaller-font-size);
+  font-size: var(--normal-font-size);
   font-weight: var(--font-semibold);
 }
 
@@ -590,13 +590,12 @@ img {
 /* === Work === */
 
 .work__description span {
-  font-size: var(--h2-font-size);
   font-weight: var(--font-semibold);
   color: var(--first-color);
 }
 
 .work__area {
-  font-size: var(--normal-font-size);
+  font-size: var(--h2-font-size);
   color: var(--first-color);
   margin-bottom: var(--mb-1);
   font-weight: font var(--font-medium);
@@ -626,8 +625,18 @@ img {
     brightness(105%) contrast(103%);
 }
 
-.home__social-icon:hover {
+.work__social-icon:hover {
   color: var(--first-color-light);
+}
+
+.work__itch__social-icon:hover {
+  filter: invert(48%) sepia(10%) saturate(288%) hue-rotate(300deg)
+    brightness(90%) contrast(92%);
+}
+
+.work__images {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* === Swiper Class ===*/
