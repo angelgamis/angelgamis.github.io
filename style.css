@@ -640,6 +640,10 @@ img {
   margin-bottom: 2rem;
 }
 
+.work__text-section {
+  margin-bottom: 2rem;
+}
+
 /* === Swiper Class ===*/
 .swiper-button-prev::after,
 .swiper-button-next::after {
