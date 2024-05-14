@@ -603,6 +603,29 @@ img {
 }
 
 .work__social {
+  margin: auto;
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.work__social-icon {
+  width: max-content;
+  font-size: 2.5rem;
+  margin: var(--mb-2);
+  color: var(--first-color);
+}
+
+.work__itch__social-icon {
+  width: 2.5rem;
+  margin: var(--mb-2);
+  background-color: none;
+  color: var(--first-color);
+}
+
+.home__social-icon:hover {
+  color: var(--first-color-light);
 }
 
 /* === Swiper Class ===*/
