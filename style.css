@@ -644,6 +644,11 @@ img {
   margin-bottom: 2rem;
 }
 
+.work__badges {
+  margin: 0 1rem 0 0;
+  display: inline-block;
+}
+
 /* === Swiper Class ===*/
 .swiper-button-prev::after,
 .swiper-button-next::after {
