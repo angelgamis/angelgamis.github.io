@@ -645,8 +645,17 @@ img {
 }
 
 .work__badges {
-  margin: 0 1rem 0 0;
-  display: inline-block;
+  height: auto;
+  margin: auto;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.work__badge {
+  padding: 0.25rem;
 }
 
 /* === Swiper Class ===*/
