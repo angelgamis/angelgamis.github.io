@@ -643,6 +643,12 @@ img {
   margin-right: auto;
 }
 
+.work__youtubevids {
+  width: 95%;
+  margin: auto;
+  height: 20rem;
+}
+
 .work__text-section {
   margin-bottom: 2rem;
 }
@@ -699,6 +705,9 @@ img {
     padding: 1rem;
     height: 250px;
   }
+  .work__youtubevids {
+    height: 11rem;
+  }
 }
 
 /* Medium Devices */
@@ -715,9 +724,12 @@ img {
   .swiper-button-next {
     display: block;
   }
+  .work__youtubevids {
+    height: 30rem;
+  }
 }
 
-/* Medium Devices */
+/* Large Devices */
 @media screen and (min-width: 1120px) {
   .card__content {
     max-width: 1120px;
@@ -729,6 +741,10 @@ img {
 
   .swiper-button-next {
     right: -1rem;
+  }
+
+  .work__youtubevids {
+    height: 35rem;
   }
 }
 
